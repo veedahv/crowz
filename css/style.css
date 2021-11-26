@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
-
 :root {
     --primary-color: #F3EAE1;
     --secondary-color: #e9f4f6;
@@ -8,10 +7,7 @@
     --text-color: #4d4f50;
     --dark-color: #23201a;
     --orange-color: #f05843;
-    --white-color: #ffffff;
-    --black-color: #000000;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -19,498 +15,211 @@
     font-family: 'M PLUS 2', sans-serif;
     color: var(--text-color);
 }
-
 .sub-titles *,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     color: var(--dark-color);
     font-family: 'PT Serif', serif;
+    font-weight: 700;
 }
-
 a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
 }
-
-img {
-    width: 100%;
-}
-
-.flex {
-    display: flex;
-}
-
-.rounded-full {
-    border-radius: 500px;
-}
-
-.body-container {
-    overflow: hidden;
-}
-
 .aside {
-    height: 100vh;
-    padding: 30px 25px;
     width: 20%;
-    display: flex;
-    text-align: center;
     background: var(--primary-color);
-    position: fixed;
 }
-
-.navigation {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
 .logo {
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
     font-weight: 700;
 }
-
 .logo-icon {
     width: 20px;
 }
-
 .profile-image-contain {
     width: 75px;
-    overflow: hidden;
-    margin: 20px auto;
 }
-
-.profile-name {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.profile-position {
+.ft-s-14 {
     font-size: 14px;
 }
-
+.ft-s-10 {
+    font-size: 10px;
+}
 .navlinks-container {
     list-style: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
 }
-
-.nav-li {
-    margin: 10px auto;
-}
-
-.navlinks {
-    font-size: 14px;
-}
-
 .navlinks.active {
     font-weight: 800;
 }
-
-.dashboard-link {
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.logout-contain {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    align-content: flex-end;
-    justify-content: center;
-}
-
-.logout-link {
-    gap: 10px;
-    height: auto;
-    align-content: flex-end;
-    justify-content: center;
-}
-
 .logout-image-contain {
     width: 24px;
     height: 24px;
-    background: var(--black-color);
-    align-items: center;
-    justify-content: center;
 }
-
 .logout-image {
     width: 14px;
     height: 14px;
 }
-
 .main {
-    padding: 30px 60px;
     width: 80%;
     margin-left: 20%;
-    flex: auto;
 }
-
 .main-container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         'header plan'
         'activity performers'
         'channels channels' 
     ;
-    gap: 50px;
 }
-
-.section-header {
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-}
-
 .main-header {
     grid-area: header;
 }
-
 .alert-value-nav,
 .alert-value {
-    color: var(--white-color);
     background: var(--orange-color);
     width: 18px;
     height: 18px;
     font-size: 9px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'PT Serif', serif;
 }
-
 .alert-value-nav {
     width: 13px;
     height: 13px;
     font-size: 7px;
 }
-
-.tools {
-    gap: 10px;
-}
-
-.statistics-container {
-    gap: 40px;
-}
-
 .statistics-card {
     flex: auto;
 }
-
-.statistics-header {
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-}
-
 .divide {
-    border: none;
     background: rgba(77, 79, 80, 0.3);
     height: 1px;
-    width: 100%;
 }
-
 .growth-dir {
     width: 20px;
     height: 20px;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 4px;
 }
-
 .up {
     background: var(--tertiary-color);
 }
-
 .down {
     background: var(--orange-color);
 }
-
-.arrow {
-    color: var(--white-color);
-    font-size: 10px;
-}
-
 .settings-img {
     width: 20px;
 }
-
-.statistics-value {
-    font-size: 35px;
-    margin: 10px 0;
-}
-
 .card-container {
     grid-area: plan;
 }
-
 .plan-card {
     background: var(--primary-color);
     border-radius: 20px;
     padding: 20px 25px;
 }
-
-.plan-card-body {
-    justify-content: space-between;
-    align-items: stretch;
-}
-
 .plan-image-container {
     width: 25px;
-    overflow: hidden;
-    margin-bottom: 15px;
 }
-
 .plan-info-container {
     max-width: 200px;
 }
-
 .orange-text {
     color: var(--orange-color);
 }
-
-.plan-text {
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-.plan-right {
-    align-items: flex-end;
-}
-
 .now-box {
     width: 60px;
     height: 60px;
     background: var(--orange-color);
-    align-items: center;
-    justify-content: center;
 }
-
 .now {
-    color: var(--white-color);
     font-weight: bold;
-    font-size: 14px;
 }
-
 .activity-container {
     grid-area: activity;
 }
-
-.timeline {
-    gap: 10px;
-    align-items: center;
-}
-
 .select-date {
-    padding: 4px;
-    border: none;
     outline: none;
     font-size: 12px;
     font-weight: 500;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .3);
 }
-
-.graph-container {
-    position: relative;
-}
-
-.graph {
-    position: relative;
-}
-
 .graph-average-card {
-    position: absolute;
     top: 40%;
     left: 60%;
     width: 100px;
     border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    background: var(--white-color);
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, .3);
 }
-
 .performers-container {
     grid-area: performers;
 }
-
-.user-container {
-    display: table;
-    width: 100%;
-    margin: 10px auto;
-}
-
-.user-row {
-    display: table-row;
-}
-
-.user-cell {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 12px 0;
-}
-
-.perfomer-profile {
-    align-items: center;
-    gap: 10px;
-}
-
 .perfomer-image {
     width: 40px;
 }
-
 .permance-perc,
 .performer-name {
-    font-size: 16px;
     font-weight: bold;
     color: var(--dark-color);
 }
-
 .view-more {
     font-weight: 700;
 }
-
 .channels-container {
     grid-area: channels;
 }
-
 .channels-card {
     background: var(--secondary-color);
     border-radius: 20px;
     padding: 40px 35px;
     border: 1px solid var(--secondary-color);
 }
-
-.channel-row {
-    gap: 30px;
-    width: 100%;
-    align-items: center;
-    overflow: visible;
-}
-
 .info {
     width: 20%;
     flex: auto;
 }
-
 .contents {
     width: 80%;
     flex: auto;
-    gap: 25px;
-    flex-wrap: nowrap;
-    overflow: visible;
 }
-
 .media-card {
-    padding: 30px 0;
-    text-align: center;
-    background: var(--white-color);
     border-radius: 20px;
-    width: 19%;
+    width: 20%;
     flex: none;
-    position: relative;
-    box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, .3);
 }
-
-
-.platfrom-logo {
-    width: 40px;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .platform-logo-box {
     width: 40px;
     height: 40px;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 4px;
-    align-items: center;
-    justify-content: center;
 }
-
-.platform-logo-box > * {
-    color: var(--white-color);
-    font-size: 24px;
-}
-
 .drib-logo {
     background: rgb(233, 36, 233);
 }
-
 .b-logo {
     background: rgb(34, 34, 146);
 }
-
 .ig-logo {
     background: orange;
 }
-
 .pin-logo {
     background: var(--orange-color);
 }
-
 .platform-name {
     font-family: 'M PLUS 2', sans-serif;
-    font-size: 18px;
 }
-
-.platform-username {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
 .platform-growth,
 .platform-growth * {
     color: var(--dark-color);
     font-weight: 700;
 }
-
-.platform-growth {
-    font-size: 28px;
-}
-
 .stats-card {
-    padding: 18px 20px;
-    text-align: left;
     background: var(--tertiary-color);
-    color: var(--white-color);
     font-weight: 500;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
 }
-
-.full-stat {
-    font-size: 22px;
-    color: var(--white-color);
-}
-
 .stat-btn {
-    background: var(--white-color);
     font-weight: 600;
     height: 35px;
     width: 35px;
-    border: none;
     outline: none;
 }
-
 .stat-right {
     color: var(--tertiary-color);
 }
